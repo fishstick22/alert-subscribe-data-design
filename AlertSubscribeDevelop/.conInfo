@@ -1,0 +1,12 @@
+#Sun Jan 28 14:59:38 CST 2018
+url=jdbc\:db2\://localhost\:50000/ECCM\:retrieveMessagesFromServerOnGetMessage\=true;
+driverName=com.ibm.db2.jcc.DB2Driver
+profileProviderID=com.ibm.datatools.db2.alias.connectionProfile
+jarList=C\:\\Program Files\\IBM\\DS4.1.3\\..\\..\\..\\IBM\\IMShared\\plugins\\com.ibm.datatools.db2_2.2.201.v20170814_2141\\driver\\db2jcc.jar;C\:\\Program Files\\IBM\\DS4.1.3\\..\\..\\..\\IBM\\IMShared\\plugins\\com.ibm.datatools.db2_2.2.201.v20170814_2141\\driver\\db2jcc_license_cisuz.jar
+userid=db2admin
+version=V11.1
+databaseName=ECCM
+conName=ECCM
+driverDefinitionType=com.ibm.datatools.db2.alias.driverTemplate
+driverDefinitionID=DriverDefn.com.ibm.datatools.db2.alias.driverTemplate.IBM Data Server Driver for JDBC and SQLJ Default
+product=DB2 UDB

@@ -1,0 +1,7 @@
+#Sun Jan 28 14:59:38 CST 2018
+generateSchema=false
+ConnectionName=ECCM
+useridCurrentSchema=false
+currentPath=SYSIBM,SYSFUN,SYSPROC,SYSIBMADM,DB2ADMIN
+currentSchema=DB2ADMIN
+ProjectAnnotation=ECCM\:jdbc\:db2\://localhost\:50000/ECCM\:retrieveMessagesFromServerOnGetMessage\=true;
