@@ -90,15 +90,18 @@ INSERT INTO CLIENT_CONFIGURATION
          CHAN_IVR_PRIORITY, 
             CHAN_SMS_PRIORITY,
                CHAN_SECURE_PRIORITY,
-                  CHAN_MAIL_PRIORITY, 
-                     CHAN_MOBILE_PRIORITY, 
-                        CHAN_DEFAULT,
-                                 REQUIRED,
-                                      MANDATORY, 
-                                           EFFECTIVE, EXPIRATION, CLIENT_ID, COMMUNICATION_ID,
+                  CHAN_CLIENT_SECURE_PRIORITY,
+                     CHAN_MAIL_PRIORITY, 
+                        CHAN_MOBILE_PRIORITY, 
+                           CHAN_DEFAULT,
+                                    REQUIRED,
+                                         MANDATORY, 
+                                              EFFECTIVE, EXPIRATION, CLIENT_ID, COMMUNICATION_ID,
       HOUSE_KPG_CREATE_TIME, HOUSE_KPG_CREATE_TRAN_CD, HOUSE_KPG_CREATE_USER, 
       HOUSE_KPG_UPDATE_TIME, HOUSE_KPG_UPDATE_TRAN_CD, HOUSE_KPG_UPDATE_USER) VALUES
-     (2, 3, 1, 0, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 142, 261,
+     (2, 3, 1, 0, 0, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 142, 261,
+      CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP'),
+     (2, 3, 1, 0, 1, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 14043, 261,
       CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP')
 ;
 
@@ -134,6 +137,7 @@ INSERT INTO COMMUNICATION (ID, NAME, DESCRIPTION)
 	 (11643, 'BCOMI', 'BLUE CROSS OF MICHIGAN'),
 	 (12130, 'BCBSA', 'BLUE CROSS BLUE SHIELD ASSOC.'),
 	 (12675, 'BCORO', 'BLUE CROSS OF ROCHESTER'),
+	 (14043, 'Z6500', 'FEP'),
 	 (14481, 'ZC342', 'BLUE CROSS IDAHO-HMO'),
 	 (14482, 'ZC343', 'BLUE CROSS IDAHO-PPO'),
 	 (14606, 'ZCC01', 'BLUE CROSS BLUE SHIELD OF TENN'),

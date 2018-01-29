@@ -64,6 +64,9 @@
             <children xsi:type="notation:Shape" xmi:id="_rGljagB9EeicLLjIIDjkHA" type="Column" element="_hBJkkgB9EeicLLjIIDjkHA" fontName="Segoe UI">
               <layoutConstraint xsi:type="notation:Bounds" xmi:id="_rGljawB9EeicLLjIIDjkHA"/>
             </children>
+            <children xsi:type="notation:Shape" xmi:id="_xwMfAAU7EeioAeofVdYvbg" type="Column" element="_xwG_cAU7EeioAeofVdYvbg" fontName="Segoe UI">
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_xwMfAQU7EeioAeofVdYvbg"/>
+            </children>
             <children xsi:type="notation:Shape" xmi:id="_rGljZgB9EeicLLjIIDjkHA" type="Column" element="_hBJkjgB9EeicLLjIIDjkHA" fontName="Segoe UI">
               <layoutConstraint xsi:type="notation:Bounds" xmi:id="_rGljZwB9EeicLLjIIDjkHA"/>
             </children>
@@ -241,11 +244,11 @@
             <children xsi:type="notation:Shape" xmi:id="_rGutcAB9EeicLLjIIDjkHA" type="Column" element="_hBJlBQB9EeicLLjIIDjkHA" fontName="Segoe UI">
               <layoutConstraint xsi:type="notation:Bounds" xmi:id="_rGutcQB9EeicLLjIIDjkHA"/>
             </children>
-            <children xsi:type="notation:Shape" xmi:id="_rGutXgB9EeicLLjIIDjkHA" type="Column" element="_hBJk7QB9EeicLLjIIDjkHA" fontName="Segoe UI">
-              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_rGutXwB9EeicLLjIIDjkHA"/>
-            </children>
             <children xsi:type="notation:Shape" xmi:id="_rGutbgB9EeicLLjIIDjkHA" type="Column" element="_hBJlAQB9EeicLLjIIDjkHA" fontName="Segoe UI">
               <layoutConstraint xsi:type="notation:Bounds" xmi:id="_rGutbwB9EeicLLjIIDjkHA"/>
+            </children>
+            <children xsi:type="notation:Shape" xmi:id="_rGutXgB9EeicLLjIIDjkHA" type="Column" element="_hBJk7QB9EeicLLjIIDjkHA" fontName="Segoe UI">
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_rGutXwB9EeicLLjIIDjkHA"/>
             </children>
             <children xsi:type="notation:Shape" xmi:id="_rGutYAB9EeicLLjIIDjkHA" type="Column" element="_hBJk7wB9EeicLLjIIDjkHA" fontName="Segoe UI">
               <layoutConstraint xsi:type="notation:Bounds" xmi:id="_rGutYQB9EeicLLjIIDjkHA"/>
@@ -736,6 +739,9 @@
     <columns xsi:type="LUW:LUWColumn" xmi:id="_hBJkkgB9EeicLLjIIDjkHA" name="CHAN_SECURE_PRIORITY" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_hBJkkwB9EeicLLjIIDjkHA" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_xwG_cAU7EeioAeofVdYvbg" name="CHAN_CLIENT_SECURE_PRIORITY">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_xwG_cQU7EeioAeofVdYvbg" name="CHAR" length="5"/>
+    </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_hBJkjgB9EeicLLjIIDjkHA" name="CHAN_MAIL_PRIORITY" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_hBJkjwB9EeicLLjIIDjkHA" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
@@ -889,15 +895,15 @@
         </eAnnotations>
       </containedType>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_hBJk7QB9EeicLLjIIDjkHA" name="EFFECTIVE">
-      <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_hBJk7gB9EeicLLjIIDjkHA" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
-    </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_hBJlAQB9EeicLLjIIDjkHA" name="MANDATORY" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_hBJlAgB9EeicLLjIIDjkHA" name="CHAR">
         <eAnnotations xmi:id="_hBJlAwB9EeicLLjIIDjkHA" source="LENGTH_SEMANTIC">
           <details xmi:id="_hBJlBAB9EeicLLjIIDjkHA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
         </eAnnotations>
       </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_hBJk7QB9EeicLLjIIDjkHA" name="EFFECTIVE">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_hBJk7gB9EeicLLjIIDjkHA" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_hBJk7wB9EeicLLjIIDjkHA" name="EXPIRATION">
       <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_hBJk8AB9EeicLLjIIDjkHA" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
