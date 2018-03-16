@@ -1,15 +1,16 @@
 -- <ScriptOptions statementTerminator=";" />
+DROP TABLE ECCM.TMCF_MMR_CMM_CFI;
 CREATE TABLE ECCM.TMCF_MMR_CMM_CFI ( -- Member Communication Configuration
     MCF_MCP_CMM_PGM_ID INTEGER NOT NULL, 
     MCF_CMM_ID INTEGER NOT NULL, 
-    MCF_SEQ_NB INTEGER NOT NULL,
+    MCF_SEQ_NB SMALLINT NOT NULL,
     MCF_EFF_DT DATE NOT NULL,
     MCF_EXP_DT DATE NOT NULL,
     MCF_EMA_CHL_PIO_NB SMALLINT NOT NULL,
     MCF_CLR_CHL_PIO_NB SMALLINT NOT NULL,
     MCF_TX_CHL_PIO_NB SMALLINT NOT NULL,
     MCF_SCT_CHL_PIO_NB SMALLINT NOT NULL,
-    MCF_TIN_DFL_CD CHAR(1) NOT NULL,
+    MCF_TIN_DFL_CHL_CD CHAR(1) NOT NULL,
     MCF_CMM_RQR_IN CHAR(1) NOT NULL,
     MCF_CMM_MAN_IN CHAR(1) NOT NULL,
     MCF_HSC_TRN_CD SMALLINT NOT NULL,
@@ -41,7 +42,7 @@ INSERT INTO ECCM.TMCF_MMR_CMM_CFI ( -- Member Communication Configuration
                        MCF_CLR_CHL_PIO_NB, -- Call(IVR) Priority (0-3)
                           MCF_TX_CHL_PIO_NB, -- Text(SMS) Priority (0-3)
                              MCF_SCT_CHL_PIO_NB, -- Secure Inbox Priority (0-1)
-                                MCF_TIN_DFL_CD, -- Default Channel E=Email, C=Call, T=Text, L=Email/Call, N-No
+                                MCF_TIN_DFL_CHL_CD, -- Default Channel E=Email, C=Call, T=Text, L=Email/Call, N-No
                                      MCF_CMM_RQR_IN,-- Required (Y/N)
                                           MCF_CMM_MAN_IN, -- Mandatory (Y/N)
                                                MCF_EFF_DT,   MCF_EXP_DT,

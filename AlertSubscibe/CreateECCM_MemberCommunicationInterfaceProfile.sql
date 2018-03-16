@@ -1,11 +1,12 @@
 -- <ScriptOptions statementTerminator=";" />
-CREATE TABLE ECCM.TMCI_CMM_IFC_POF ( 
-    MCI_MCP_CMM_PGM_ID INTEGER NOT NULL, 
+DROP TABLE ECCM.TMCI_CMM_IFC_POF;
+CREATE TABLE ECCM.TMCI_CMM_IFC_POF ( -- Member Communication Interface Profile
+    MCI_MCP_CMM_PGM_ID SMALLINT NOT NULL, 
     MCI_SEQ_NB INTEGER NOT NULL, 
     MCI_EFF_DT DATE NOT NULL, 
     MCI_EXP_DT DATE NOT NULL, 
     MCI_DSY_ORD_NB SMALLINT NOT NULL, 
-    MCI_TIN_BY_DFL_CD CHAR(1) NOT NULL, 
+    MCI_DFL_TIN_IN CHAR(1) NOT NULL, 
     MCI_UI_VSB_CD CHAR(1) NOT NULL, 
     MCI_EMA_DSY_IN CHAR(1) NOT NULL, 
     MCI_CLR_DSY_IN CHAR(1) NOT NULL, 
@@ -31,7 +32,7 @@ INSERT INTO ECCM.TMCI_CMM_IFC_POF (
       MCI_MCP_CMM_PGM_ID, -- Program ID
            MCI_SEQ_NB, -- Sequence Num
               MCI_DSY_ORD_NB, -- UI Display Order
-                 MCI_TIN_BY_DFL_CD,  -- Opt In by Default (Y/N)
+                 MCI_DFL_TIN_IN,  -- Opt In by Default (Y/N)
                       MCI_UI_VSB_CD, -- UI Visibility (Y/N/P)
                            MCI_EMA_DSY_IN, -- Email Chan Opt Display
                                 MCI_CLR_DSY_IN, -- Call(IVR) Chan Opt Display 
